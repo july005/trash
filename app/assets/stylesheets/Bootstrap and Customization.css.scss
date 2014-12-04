@@ -1,1 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+
+body {
+  background: asset_url('background4.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+};
+
+$body-bg:                         #bee9e4;
+$font-family-sans-serif:          'Amatic SC', cursive;
+$navbar-height:                  	20px;
+$navbar-default-bg:               #BEE9E4;
+$navbar-default-brand-color:      black;
+$brand-primary:                   #d86c70;
+$jumbotron-bg:                    white;
+$btn-primary-color:								white;
+$btn-default-color:								purple;
+$btn-font-weight:									900;
+$nav-link-padding:								10px 20px;
+$navbar-default-link-color: 			black;
+$navbar-default-link-hover-color: white;
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}
+$font-size-base:									40px;
+$navbar-height:										70px;
+
+
 @import 'bootstrap';
+
+.center {
+     text-align: center;
+}
+
+.navbar-brand {
+     font-weight: bold;
+}

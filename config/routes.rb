@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   root "pages#home"
   get "about" => "pages#about" #this creates the about path
   get "hotels" => "pages#hotels" 
+  get "info" => "pages#info"
+  get "chars" => "pages#chars"
+  get "login" => "pages#login"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -7,4 +7,13 @@ class PagesController < ApplicationController
 
   def hotels
   end
+
+  def info
+  end
+
+  def chars
+  end
+
+  def login
+  end
 end
