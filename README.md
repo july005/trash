@@ -1,5 +1,3 @@
-# One Month Rails
+# This is my project!
 
-This is the MACBOOK pinteresting sample application for [*One Month Rails*](http://onemonthrails.com)
-
-by 
+by Erin
