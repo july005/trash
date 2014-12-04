@@ -16,4 +16,10 @@ class PagesController < ApplicationController
 
   def login
   end
+
+  def hisname
+  end
+
+  def hername
+  end
 end
