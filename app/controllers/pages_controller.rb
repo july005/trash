@@ -22,4 +22,7 @@ class PagesController < ApplicationController
 
   def hername
   end
+
+  def contact
+  end
 end
