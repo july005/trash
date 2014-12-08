@@ -8,6 +8,11 @@ body {
   background-size: cover;
 };
 
+img, embed, object, video {
+max-width:100%;
+    height:auto;
+}
+
 $body-bg:                         #bee9e4;
 $font-family-sans-serif:          'Amatic SC', cursive;
 $navbar-height:                  	20px;

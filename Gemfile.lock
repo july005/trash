@@ -32,6 +32,11 @@ GEM
     bootstrap-sass (3.3.1.0)
       sass (~> 3.2)
     builder (3.2.2)
+    carrierwave (0.10.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+      mime-types (>= 1.16)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -61,6 +66,10 @@ GEM
       mime-types (>= 1.16, < 3)
     mime-types (2.4.3)
     minitest (5.4.3)
+    mobileesp_converted (0.2.3)
+    mobvious (0.3.2)
+      mobileesp_converted (~> 0.2.0)
+      rack (>= 1.1.0)
     multi_json (1.10.1)
     orm_adapter (0.5.0)
     pg (0.17.1)
@@ -92,6 +101,8 @@ GEM
       json (~> 1.4)
     responders (1.1.2)
       railties (>= 3.2, < 4.2)
+    responsive_images (0.1.1)
+      mobvious
     sass (3.2.19)
     sass-rails (4.0.5)
       railties (>= 4.0.0, < 5.0)
@@ -130,6 +141,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass
+  carrierwave
   coffee-rails (~> 4.0.0)
   devise (~> 3.4.1)
   jbuilder (~> 2.0)
@@ -137,6 +149,7 @@ DEPENDENCIES
   pg
   rails (= 4.1.8)
   rails_12factor
+  responsive_images
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring

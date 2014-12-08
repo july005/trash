@@ -22,6 +22,7 @@
           <li><%= link_to "Questions?", about_path%></li>
           <% if user_signed_in? %>
             <li><%= link_to "I'm All Done for Today", destroy_user_session_path, method: :delete%></li>
+            <li><%= link_to "My Stories", login_path%></li>
           <% else %>
             <li><%= link_to "Sign In", new_user_session_path%></li>
             <%end%>

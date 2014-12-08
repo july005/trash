@@ -1,7 +1,7 @@
 <div class="jumbotron center">
 
 		<% if user_signed_in? %>
-		<h1>Here are all my stories...</h1>
+		<h1>I have so many stories to tell...</h1>
 					<label class="radio-inline">
 				  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Abigail Builds a Train <br><%= image_tag("story1.jpg", :alt => "My first story") %></br>
 					</label>
@@ -31,8 +31,8 @@
 	 	<p>
 		<%= link_to "Login", new_user_session_path, class: "btn btn-primary btn-lg" %></h2>
 		
-		<h3>I want to create and save my first story</h3>
-		<%= link_to "Sign Me Up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+		<h3>I'm new here!</h3>
+		<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
 		</p>
 	
 
