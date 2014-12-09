@@ -35,6 +35,16 @@ $btn-warning-bg:                  orange;
 $btn-default-bg:                  white;
 $btn-default-color:								#ffb347;
 
+.imagetwist:hover img {
+  transform: rotate(20deg);
+  transition: all 0.3s ease 0s;
+  width: 65%
+}
+.imageUNtwist:hover img {
+  transform: rotate(-20deg);
+  transition: all 0.3s ease 0s;
+  width: 65%
+}
 
 .navbar-nav > li{
   padding-left:30px;
@@ -85,3 +95,5 @@ $navbar-height:										70px;
 .pt-page-ontop {
     z-index: 999;
 }
+
+
