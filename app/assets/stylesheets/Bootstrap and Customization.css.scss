@@ -18,14 +18,22 @@ $font-family-sans-serif:          'Amatic SC', cursive;
 $navbar-height:                  	20px;
 $navbar-default-bg:               #BEE9E4;
 $navbar-default-brand-color:      black;
+$nav-link-padding:                10px 20px;
+$navbar-default-link-color:       black;
+$navbar-default-link-hover-color: white;
+
 $brand-primary:                   #d86c70;
 $jumbotron-bg:                    white;
 $btn-primary-color:               white;
-$btn-default-color:								orange;
-$btn-font-weight:									900;
-$nav-link-padding:								10px 20px;
-$navbar-default-link-color: 			black;
-$navbar-default-link-hover-color: white;
+$btn-font-weight:                 800;
+
+$btn-success-bg:                  #38B0DE;
+$btn-success-color:               white;
+
+$btn-default-bg:                  white;
+$btn-default-color:								#ffb347;
+
+
 .navbar-nav > li{
   padding-left:30px;
   padding-right:30px;

@@ -1,5 +1,6 @@
   <div class="jumbotron center">
-    <h2>Let's write a story!</h2>
+    <h2>Nice to meet you!</h2> 
+
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
@@ -9,6 +10,7 @@
     <%= f.email_field :email, autofocus: true %>
   </div>
 
+
   <div class="field">
     <%= f.label :password %>
     <% if @validatable %>
@@ -16,13 +18,18 @@
     <% end %><br />
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
+
+
   <div class="field">
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 <p></p>
+
+
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Sign up", class: "btn btn-success btn-lg" %>
+        
   </div>
 <% end %>
 <%= render "devise/shared/links" %>

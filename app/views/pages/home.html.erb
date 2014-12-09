@@ -12,9 +12,11 @@
    <h2>I create the stories of my dreams</h2>
 	 
 	 	<p>
-		<%= link_to(image_tag("dreaming.png"), chars_path) %>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<%= link_to(image_tag("read.png"), login_path) %>
+		<div class="row">
+
+		<div class="col-xs-6"><%= link_to(image_tag("dreaming.png"), chars_path, class: "btn btn-default") %></div>
+
+		<div class="col-xs-6"><%= link_to(image_tag("readsmaller.png"), login_path, class: "btn btn-default") %></div>
 		</p>
 </div>
 </body>

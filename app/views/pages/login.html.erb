@@ -1,7 +1,8 @@
-<div class="jumbotron center">
+
 
 		<% if user_signed_in? %>
-		<h1>I have so many stories to tell...</h1>
+		<div class="jumbotron center">
+			<h1>I have so many stories to tell...</h1>
 					<label class="radio-inline">
 				  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Abigail Builds a Train <br><%= image_tag("story1.jpg", :alt => "My first story") %></br>
 					</label>
@@ -24,17 +25,24 @@
 					<label class="radio-inline">
 				  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Theo Plants a Vegetable Garden <br><%= image_tag("story2.jpg", :alt => "My fourth story") %></br>
 					</label>
+				</div>
+		
+
 		<%else%>
 
-
-	<h3>Let's read my stories&excl;</h3>
-	 	<p>
-		<%= link_to "Login", new_user_session_path, class: "btn btn-primary btn-lg" %></h2>
-		
-		<h3>I'm new here!</h3>
-		<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
-		</p>
+<div class="jumbotron center">
 	
+	<div class="row">
+
+		<div class="col-xs-6"><h3>Let's read my stories! <%= link_to "Login", new_user_session_path, class: "btn btn-primary btn-lg" %></h3></div>
+		
+		
+			
+	<div class="col-xs-6"><h3>I'm new here! </br><%= link_to "Sign Up", new_user_registration_path, class: "btn btn-success btn-lg" %></h3></div>
+		
+	
+</div>
+	  </p>
 
 	<%end%>
 </div>
