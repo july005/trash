@@ -19,13 +19,17 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to "Questions?", about_path%></li>
-          <% if user_signed_in? %>
-            <li><%= link_to "I'm All Done for Today", destroy_user_session_path, method: :delete%></li>
-            <li><%= link_to "My Stories", login_path%></li>
-          <% else %>
-            <li><%= link_to "Sign In", new_user_session_path%></li>
-            <%end%>
+          <li><%= link_to "Help", about_path%></li>
+            
+            <% if user_signed_in? %>
+              <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete%></li>
+              <li><%= link_to "Settings", edit_user_registration_path %></li>
+              <li><%= link_to "My Library", login_path%></li>
+            
+            <% else %>
+              <li><%= link_to "Sign In", new_user_session_path%></li>
+              <%end%>
+        
         </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
