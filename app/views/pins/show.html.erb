@@ -1,11 +1,13 @@
-	<div class="jumbotron">
-		<p id="notice"><%= notice %></p>
+<div class="jumbotron">
+	<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @pin.description %>
-</p>
+	<p>
+	  <strong>Description:</strong>
+	  <%= @pin.description %>
+	</p>
 
-<%= link_to 'Edit this page', edit_pin_path(@pin) %> |
-<%= link_to 'Back', pins_path %>
+	<% if @pin.user == current_user %>
+	<%= link_to 'Edit this page', edit_pin_path(@pin) %> |
+	<%= link_to 'Back', pins_path %>
+	<%end%>
 </div>
