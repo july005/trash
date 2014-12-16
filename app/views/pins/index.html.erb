@@ -1,27 +1,32 @@
 <div class="jumbotron">
-    <h1>Listing pins</h1>
+    <h1>My Story Pages<%= image_tag 'girlhead.jpg' %></h1>
 
 <table>
-  <thead>
+  <thead> <!--Erin: table head-->
     <tr>
-      <th>Description</th>
-      <th colspan="3"></th>
+      <th>Page</th>
+      <th colspan="3">&nbsp; &nbsp;&nbsp; &nbsp;I want to...</th>
     </tr>
   </thead>
 
-  <tbody>
+  <tbody> <!--Erin: table body-->
+
+          <!--Erin: below = LOOP (for each @pin) til "end"-->
     <% @pins.each do |pin| %>
       <tr>
-        <td><%= pin.description %></td>
-        <td><%= link_to 'Show', pin %>&nbsp; &nbsp;</td>  
-        <td><%= link_to 'Edit', edit_pin_path(pin) %>&nbsp; &nbsp;</td> 
-        <td><%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= pin.description %>&nbsp; &nbsp;&nbsp; &nbsp;</td>
+        <td>&nbsp; &nbsp;&nbsp; &nbsp;<%= link_to 'View', pin %>&nbsp; &nbsp;</td> 
+        <!--Erin: in above line, "pin" = pin_path(pin)-->
+        <td>&nbsp; &nbsp;&nbsp; &nbsp;<%= link_to 'Edit', edit_pin_path(pin) %>&nbsp; &nbsp;</td> 
+        <td>&nbsp; &nbsp;&nbsp; &nbsp;<%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
+          <!--Erin: end of loop-->
+
   </tbody>
 </table>
 
 <br>
 
-<%= link_to 'New Pin', new_pin_path %>
+<%= link_to 'New Story Page', new_pin_path, class: "btn btn-success btn-lg"%>
   </div>
