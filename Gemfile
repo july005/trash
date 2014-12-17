@@ -16,7 +16,6 @@ gem 'responsive_images'
 gem 'carrierwave'
 gem 'paperclip' , github: 'thoughtbot/paperclip'
 gem 'aws-sdk', '~>1.16.1'
-gem 'aws-s3', require => 'aws/s3'
 
 group :development, :test do
      gem 'sqlite3'
