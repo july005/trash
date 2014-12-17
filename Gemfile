@@ -14,7 +14,7 @@ gem 'spring',        group: :development
 gem 'devise', '~> 3.4.1'
 gem 'responsive_images'
 gem 'carrierwave'
-gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+gem "paperclip"
 
 group :development, :test do
      gem 'sqlite3'

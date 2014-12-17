@@ -16,7 +16,7 @@
           <!--Erin: below = LOOP (for each @pin) til "end"-->
     <% @pins.each do |pin| %>
       <tr>
-        <td><%= image_tag pin.image.url (:thumb) %>&nbsp; &nbsp;&nbsp; &nbsp;</td> 
+        <td><%= image_tag pin.image.url(:medium) %>&nbsp; &nbsp;&nbsp; &nbsp;</td> 
         <td><%= pin.description %>&nbsp; &nbsp;&nbsp; &nbsp;</td>
         <td><%= pin.user.email if pin.user %>&nbsp; &nbsp;&nbsp; &nbsp;</td>
         <td>&nbsp; &nbsp;&nbsp; &nbsp;<%= link_to 'View', pin_path(pin) %>&nbsp; &nbsp;</td> 
