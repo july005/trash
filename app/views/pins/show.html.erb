@@ -1,6 +1,8 @@
 <div class="jumbotron">
 	<p id="notice"><%= notice %></p>
 
+	<%= image_tag @pin.image.url(:medium) %>
+	
 	<p>
 	  <strong>Description:</strong>
 	  <%= @pin.description %>
@@ -8,6 +10,7 @@
 
 	<% if @pin.user == current_user %>
 	<%= link_to 'Edit this page', edit_pin_path(@pin) %> |
-	<%= link_to 'Back', pins_path %>
 	<%end%>
+	<%= link_to 'Back', pins_path %>
+	
 </div>
