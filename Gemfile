@@ -14,8 +14,8 @@ gem 'spring',        group: :development
 gem 'devise', '~> 3.4.1'
 gem 'responsive_images'
 gem 'carrierwave'
-gem 'paperclip', '~> 4.2'
-gem 'aws-sdk', '~>1.20.0'
+gem 'paperclip' , github: 'thoughtbot/paperclip'
+gem 'aws-sdk', '~>1.16.1'
 
 group :development, :test do
      gem 'sqlite3'
