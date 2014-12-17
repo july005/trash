@@ -15,7 +15,7 @@ gem 'devise', '~> 3.4.1'
 gem 'responsive_images'
 gem 'carrierwave'
 gem 'paperclip', '~> 4.2'
-gem 'aws-sdk', '~>1.59.1'
+gem 'aws-sdk', '~>1.20.0'
 
 group :development, :test do
      gem 'sqlite3'
