@@ -1,41 +1,20 @@
 <div class="jumbotron">
-    <h1>My Story Pages<%= image_tag 'girlhead.jpg' %></h1>
-
-<table>
-  <thead> <!--Erin: table head-->
-    <tr>
-      <th>Image</th>
-      <th>Page&nbsp; &nbsp;&nbsp; &nbsp;</th>
-      <th>Author</th>
-      <th colspan="3">&nbsp; &nbsp;&nbsp; &nbsp;I want to...</th>
-    </tr>
-  </thead>
-
-  <tbody> <!--Erin: table body-->
-
-          <!--Erin: below = LOOP (for each @pin) til "end"-->
+  
+  <div id="pins" class="transitions-enabled">
     <% @pins.each do |pin| %>
-      <tr>
-        <td><%= image_tag pin.image.url(:medium) %>&nbsp; &nbsp;&nbsp; &nbsp;</td> 
-        <td><%= pin.description %>&nbsp; &nbsp;&nbsp; &nbsp;</td>
-        <td><%= pin.user.email if pin.user %>&nbsp; &nbsp;&nbsp; &nbsp;</td>
-        <td>&nbsp; &nbsp;&nbsp; &nbsp;<%= link_to 'View', pin_path(pin) %>&nbsp; &nbsp;</td> 
-        
-        <% if pin.user == current_user %>
-            
-            <td>&nbsp; &nbsp;&nbsp; &nbsp;<%= link_to 'Edit', edit_pin_path(pin) %>&nbsp; &nbsp;</td> 
-            <td>&nbsp; &nbsp;&nbsp; &nbsp;<%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <%end%>
-
-      </tr>
+      <div class="box panel panel-default">
+        <%= image_tag pin.image.url(:medium) %>
+        <div class="panel-body">
+          <%= pin.description %>
+          <%= pin.user.email if pin.user %>
+          <%= link_to 'View', pin_path(pin) %>
+          <% if pin.user == current_user %>
+              <%= link_to 'Edit', edit_pin_path(pin) %>
+              <%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+              <%end%>
+        </div>
+      </div>
     <% end %>
-          <!--Erin: end of loop-->
-
-  </tbody>
-</table>
-
-<br>
-<%if user_signed_in? %>
-    <%= link_to 'New Story Page', new_pin_path, class: "btn btn-success btn-lg"%>
-<%end%>
   </div>
+
+</div>
