@@ -10,18 +10,16 @@
 		
 		<h1>I have a question...</h1>
 					
-					<p class="text-left">
-						How do I change my settings?
+						<p class="text-left">
+						How do I see my pins?
 								<div class="dropdown" style="float: left;">
 								  <button class="btn btn-default">
-								  <td><%= link_to "Follow this link to change your author name and other settings", edit_user_registration_path%></td><%= image_tag 'girlhead.jpg' %></button>
+								  <td><%= link_to "Follow this link to see your pins", pins_path%></td><%= image_tag 'girlhead.jpg' %></button>
 								  </button>
 								  </ul>
 								</div>
-						</p>
-					<br></br>
-					<br></br>
-
+						</p><br></br><br></br>
+						
 					<p class="text-left">
 						How do I print my story?
 								<div class="dropdown" style="float: left;">
@@ -33,9 +31,7 @@
 								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Details: here's how you do it: text text <br>texttext text texttext text texttext</br>text texttext text texttext <br>text texttext text text</br></a></li>
 								  </ul>
 								</div>
-						</p>
-					<br></br>
-					<br></br>
+						</p><br></br><br></br>
 
 					<p class="text-left">
 						Who is the illustrator?
@@ -48,8 +44,7 @@
 									    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Details: text text text text text <br>texttext text text text text text text</br>text text text text texttext <br>text text text text text</br></a></li>
 									  </ul>
 								</div>
-						</p>
-						<br></br> <br></br>
+						</p><br></br> <br></br>
 	
 						<p class="text-left">
 						How do I show all my friends my story?
@@ -62,8 +57,17 @@
 								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Details: here's how you do it: text text <br>texttext text texttext text texttext</br>text texttext text texttext <br>text texttext text text</br></a></li>
 								  </ul>
 								</div>
-						</p>
-						<br></br><br></br>
+						</p><br></br><br></br>
+
+					<p class="text-left">
+						How do I change my settings?
+								<div class="dropdown" style="float: left;">
+								  <button class="btn btn-default">
+								  <td><%= link_to "Follow this link to change your author name and other settings", edit_user_registration_path%></td><%= image_tag 'girlhead.jpg' %></button>
+								  </button>
+								  </ul>
+								</div>
+						</p><br></br><br></br>
 
 						** Did we miss something? <%= link_to "Let us know!", contact_path%> **
 	</div>

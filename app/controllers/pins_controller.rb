@@ -5,7 +5,7 @@ class PinsController < ApplicationController
   respond_to :html
 
   def index
-    @pins = Pin.all
+    @pins = Pin.all.order "created_at DESC"
   end
 
   def show #ERIN--this is READ
