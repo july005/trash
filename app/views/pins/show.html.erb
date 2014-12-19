@@ -1,16 +1,24 @@
 <div class="jumbotron">
-	<p id="notice"><%= notice %></p>
-
-	<%= image_tag @pin.image.url(:medium) %>
-	
-	<p>
-	  <strong>Description:</strong>
-	  <%= @pin.description %>
-	</p>
-
-	<% if @pin.user == current_user %>
-	<%= link_to 'Edit this page', edit_pin_path(@pin) %> |
-	<%end%>
 	<%= link_to 'Back', pins_path %>
+
+	<div class="row">
+		<div class="col-md-offset-2 col-md-8">
+			<div class="panel panel-default">
+			<div class="panel-heading center">
+				<%= image_tag @pin.image.url(:medium) %>
+			</div>
+
+				<p><h5><center><%= @pin.description %></h5></p>
+				<p><h5><strong><center><%= @pin.user.email if @pin.user %></strong></h5></p>
 	
+				<h5><center>
+				<% if @pin.user == current_user %>
+	        <%= link_to edit_pin_path(@pin) do %>
+	          <span class="glyphicon glyphicon-edit"></span>Edit&nbsp;&nbsp;
+	        <% end %>	
+				</h5>
 </div>
+</div>
+		</div>
+		</div>
+		<% end %>	

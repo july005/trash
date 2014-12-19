@@ -12,13 +12,13 @@ img, embed, object, video {
 max-width:100%;
     height:auto;
 }
+.navbar, .navbar-inner { height: 70px !important }
 
 $body-bg:                         #bee9e4;
 $font-family-sans-serif:          'Amatic SC', cursive;
-$navbar-height:                  	18px;
 $navbar-default-bg:               #BEE9E4;
 $navbar-default-brand-color:      black;
-$nav-link-padding:                7px 7px;
+$nav-link-padding:                7px 4px;
 $navbar-default-link-color:       black;
 $navbar-default-link-hover-color: white;
 
@@ -52,10 +52,19 @@ $btn-default-color:								#ffb347;
   padding-left:30px;
   padding-right:30px;
 }
+
+
+body { padding-top: 140px; }
+
 $font-size-base:									34px;
 $navbar-height:										60px;
 
+.glyphicon {
+   font-family:'Glyphicons Halflings' !important;
+   // more css comes along here
+}
 
+@import "bootstrap-sprockets";
 @import 'bootstrap';
 
 .center {
@@ -97,5 +106,6 @@ $navbar-height:										60px;
 .pt-page-ontop {
     z-index: 999;
 }
+
 
 
