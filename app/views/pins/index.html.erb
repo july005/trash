@@ -26,5 +26,10 @@
       </div>
     <% end %>
   </div>
-<strong><center><%= will_paginate @posts, renderer: BootstrapPagination::Rails %></strong>
+
+<div class="center"><ul class="pagination pagination-sm">
+   <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
+ </ul>
+</div>
+
 </div>
