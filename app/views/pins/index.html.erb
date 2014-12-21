@@ -9,7 +9,7 @@
           <h5><strong><%= pin.description %></strong></h5>
           <h6><%= pin.user.name if pin.user %></h6>
 
-          <% if pin.user == current_user %>
+          <% if current_user && (pin.user == current_user) %>
             <div class="actions">
               <h7>
               <%= link_to edit_pin_path(pin) do %>
