@@ -2,7 +2,7 @@
 
 		<% if user_signed_in? %>
 		<div class="jumbotron center">
-			<h1>I have so many stories to tell...</h1>
+			<h1><%= current_user.name %> has so many stories to tell...</h1>
 					<label class="radio-inline">
 				  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Abigail Builds a Train <br><%= image_tag("story1.jpg", :alt => "My first story") %></br>
 					</label>

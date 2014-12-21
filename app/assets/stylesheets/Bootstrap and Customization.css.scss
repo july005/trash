@@ -63,7 +63,11 @@ $navbar-height:										60px;
    font-family:'Glyphicons Halflings' !important;
    // more css comes along here
 }
-
+.field_with_errors {
+  padding: 2px;
+  background-color: #8470ff;
+  display: inline-block;
+}
 @import "bootstrap-sprockets";
 @import 'bootstrap';
 

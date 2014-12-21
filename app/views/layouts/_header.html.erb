@@ -24,10 +24,14 @@
               
               <li><%= link_to "Help", about_path %></li>
 
-              <li><%= link_to login_path do %>
-                <span class="glyphicon glyphicon-book" aria-hidden="true"></span>&nbsp;Library
-                <% end %>
+
+
+
+              <li><%= link_to current_user.name+"'s Stories", login_path %> 
               </li>
+
+
+
 
               <li><%= link_to new_pin_path do %>
                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>New Story
