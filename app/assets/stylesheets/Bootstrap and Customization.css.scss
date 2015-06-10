@@ -35,7 +35,7 @@ $btn-warning-bg:                  orange;
 $btn-storypage-bg:                #b19cd9;
 
 $btn-default-bg:                  white;
-$btn-default-color:								#ffb347;
+$btn-default-color:               #ffb347;
 
 .imagetwist:hover img {
   transform: rotate(20deg);
@@ -56,8 +56,8 @@ $btn-default-color:								#ffb347;
 
 body { padding-top: 140px; }
 
-$font-size-base:									34px;
-$navbar-height:										60px;
+$font-size-base:                  34px;
+$navbar-height:                   60px;
 
 .glyphicon {
    font-family:'Glyphicons Halflings' !important;
@@ -111,5 +111,9 @@ $navbar-height:										60px;
     z-index: 999;
 }
 
-
+.alert-success {
+color: black;
+background-color: #BEE9E4;
+border-color: white;
+}
 

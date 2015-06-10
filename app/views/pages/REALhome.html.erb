@@ -1,0 +1,50 @@
+<html lang="en">  
+  <head> 
+	  
+ </head>
+
+
+ <body>
+	<div class="jumbotron center">
+	<h1><strong>Oh My Stories!</strong>
+	 </h1>
+
+   <h2>I create the stories of my dreams</h2>
+	 
+	 	<p>
+
+		<div class="row">
+
+		<div class="col-xs-6">
+			<div class="imagetwist">
+				<%= link_to(image_tag("dreaming.png"), chars_path) %>
+			</div>
+			</div>
+		</div>
+
+		<div class="col-xs-6">
+			<div class="imageUNtwist">
+				<% if user_signed_in? %>
+						<%= link_to(image_tag("readsmaller.png"), login_path) %>
+				<% else %>
+            <%= link_to(image_tag("readsmaller.png"), new_user_session_path) %>
+            <%end%>
+      </div>
+		</div>
+
+		</p>
+</div>
+            
+            
+
+
+
+
+
+				
+
+</body>
+
+
+
+
