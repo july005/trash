@@ -76,7 +76,7 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_mailer.default_url_options = { host: 'www.storiest.com' }
+  config.action_mailer.default_url_options = { host: 'www.ohmystories.com' }
   #note to set this to actual host
 
   config.paperclip_defaults = {
